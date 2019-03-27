@@ -1,0 +1,38 @@
+.ideology {
+    background-color: #533866;
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+}
+
+.ideology__row {
+    display: flex;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.ideology__column {
+    color: white;
+    flex-basis: 0;
+    flex-grow: 1;
+    margin-bottom: 12rem;
+    padding: 0 4rem;
+}
+
+.ideology__mainHeader {
+    font-size: 7rem;
+    text-align: center;
+}
+
+.ideology__header {
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+}
+
+.ideology__text {
+    font-size: 2rem;
+}
+
+.ideology__row:last-child {
+    .ideology__column {
+        margin-bottom: 0;
+    }
+}

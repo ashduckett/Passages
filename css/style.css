@@ -1,0 +1,393 @@
+/* Browser reset - normalize.css is not required anymore */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  /* Override the root font size so rems can be used more easily. 62.5% is what 10px is as a % of 16px */
+  font-size: 62.5%; }
+
+body {
+  /* font-size: 16px; */
+  /* Also set font-family, font-weight, line-height and font colour here. */
+  box-sizing: border-box; }
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0) translateX(-50%); }
+  100% {
+    transform: translateY(10px) translateX(-50%); } }
+
+.header {
+  height: 100vh; }
+  .header__unblurred {
+    top: 0;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background1.jpg);
+    background-position: top;
+    background-size: cover; }
+  .header__blurred {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background1withblur.jpg);
+    background-position: top;
+    background-size: cover; }
+  .header__centerPiece {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'La Belle Aurore', cursive;
+    width: 100%; }
+  .header__mainHeader {
+    text-align: center;
+    font-size: 7.5rem; }
+  .header__subHeader {
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    font-size: 3rem;
+    letter-spacing: 2rem; }
+  .header__arrow {
+    height: 100px;
+    width: 100px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    background-image: url(../img/arrow.svg);
+    background-position: top;
+    background-size: cover;
+    animation-name: bounce;
+    animation-duration: .5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite; }
+
+.about {
+  padding: 10rem 20rem; }
+  .about__heading {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 3rem; }
+  .about__text {
+    font-size: 2rem;
+    font-family: 'Gothic A1', sans-serif; }
+
+.sectors {
+  padding-bottom: 10rem;
+  padding-top: 5rem;
+  background-color: #533866; }
+  .sectors__container {
+    display: flex;
+    padding: 0 20rem; }
+  .sectors__sector {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center; }
+  .sectors__icon {
+    width: 25%; }
+  .sectors__heading {
+    text-align: center;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 5rem; }
+  .sectors__sector-heading {
+    font-size: 3.3rem;
+    font-family: 'Gothic A1', sans-serif;
+    padding: 2rem; }
+  .sectors__sector-text {
+    font-size: 1.9rem;
+    font-family: 'Gothic A1', sans-serif; }
+
+.ideology {
+  background-color: #533866;
+  padding-top: 18rem;
+  padding-bottom: 18rem; }
+
+.ideology__row {
+  display: flex;
+  font-family: 'Gothic A1', sans-serif; }
+
+.ideology__column {
+  color: white;
+  flex-basis: 0;
+  flex-grow: 1;
+  margin-bottom: 12rem;
+  padding: 0 4rem; }
+
+.ideology__mainHeader {
+  font-size: 7rem;
+  text-align: center; }
+
+.ideology__header {
+  font-size: 4.5rem;
+  margin-bottom: 3rem; }
+
+.ideology__text {
+  font-size: 2rem; }
+
+.ideology__row:last-child .ideology__column {
+  margin-bottom: 0; }
+
+.uncouthSlider {
+  height: 390px;
+  position: relative;
+  overflow-x: hidden;
+  margin-bottom: 7rem; }
+  .uncouthSlider__dotsContainer {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute; }
+
+.sliderTitle {
+  text-align: center;
+  margin: 1em; }
+
+.sliderText {
+  text-align: center; }
+
+.sliderCenterPiece {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.sliderImage {
+  width: 100px; }
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.sliderPrevBtn {
+  position: absolute;
+  top: 50%;
+  transform: translate(calc(1rem), -50%); }
+
+.sliderNextBtn {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translate(calc(-100% - 1rem), -50%); }
+
+i {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 20px; }
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg); }
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg); }
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg); }
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg); }
+
+/* Browser reset - normalize.css is not required anymore */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  /* Override the root font size so rems can be used more easily. 62.5% is what 10px is as a % of 16px */
+  font-size: 62.5%; }
+
+body {
+  /* font-size: 16px; */
+  /* Also set font-family, font-weight, line-height and font colour here. */
+  box-sizing: border-box;
+  /* font-family: 'Gothic A1', sans-serif; */ }
+
+.uncouthSlider {
+  /* background-color: yellow; */
+  height: 390px;
+  position: relative;
+  overflow-x: hidden; }
+
+.sliderTitle {
+  text-align: center;
+  margin: 1em; }
+
+.sliderText {
+  text-align: center; }
+
+.sliderCenterPiece {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.sliderImage {
+  width: 100px; }
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.sliderPrevBtn {
+  position: absolute;
+  top: 50%;
+  transform: translate(calc(1rem), -50%); }
+
+.sliderNextBtn {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translate(calc(-100% - 1rem), -50%); }
+
+i {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 20px; }
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg); }
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg); }
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg); }
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg); }
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 8px; }
+
+.dot.active {
+  background-color: black; }
+
+.sliderProfileContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Gothic A1', sans-serif; }
+
+.sliderProfileContainer img {
+  border-radius: 100px;
+  object-fit: cover; }
+
+.profileCredentials {
+  /* flex-grow: 1; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px; }
+
+.profileName {
+  font-size: 2.3rem;
+  margin-bottom: 1rem; }
+
+.profileTitle {
+  font-size: 1.6rem;
+  font-weight: 300; }
+
+.sliderQuote {
+  font-size: 2rem;
+  width: 60%;
+  text-align: center;
+  font-family: 'Gothic A1', sans-serif;
+  color: #a0a0a0;
+  font-weight: 300;
+  margin-bottom: 5rem; }
+
+.button {
+  background-color: #533866;
+  border: 1px solid white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; }
+
+.footer {
+  height: 100px;
+  background-color: black; }
+
+.testimonials__heading {
+  text-align: center;
+  font-family: 'Gothic A1', sans-serif;
+  font-size: 7rem;
+  margin-top: 7rem; }
+
+.contact {
+  background-color: #533866;
+  color: white;
+  padding: 10rem 0;
+  font-family: 'Gothic A1', sans-serif; }
+  .contact__form-field-label {
+    flex-grow: 1;
+    font-size: 1.4rem;
+    width: 10rem; }
+  .contact__header {
+    text-align: center;
+    font-size: 7rem;
+    margin: 7rem; }
+  .contact__form-field-input {
+    width: 100%;
+    height: 3rem;
+    padding-left: 1rem; }
+    .contact__form-field-input--message {
+      resize: none;
+      height: 10rem;
+      padding-top: 1rem; }
+  .contact__form {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column; }
+  .contact__form-row {
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    position: relative; }
+    .contact__form-row--submit {
+      justify-content: flex-end; }
+  .contact__form-error {
+    position: absolute;
+    top: 100%;
+    font-size: 1.5rem; }
+  .contact__input-container {
+    width: 90%;
+    text-align: right; }
+  .contact__form-error {
+    display: none; }

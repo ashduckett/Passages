@@ -1,0 +1,23 @@
+/* Browser reset - normalize.css is not required anymore */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    //font-family: inherit;
+}
+
+html {
+    /* Override the root font size so rems can be used more easily. 62.5% is what 10px is as a % of 16px */
+    font-size: 62.5%;
+}
+
+body {
+    /* font-size: 16px; */
+    /* Also set font-family, font-weight, line-height and font colour here. */
+    box-sizing: border-box;
+    
+    // font-family: 'Gothic A1', sans-serif;
+}
+
